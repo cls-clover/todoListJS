@@ -12,7 +12,7 @@ const deleteTodo = function (div) {
 
 // ------- func edit --------
 const editTodo = function (h3) {
-    const newText = prompt('Enter new text');
+    const newText = prompt('Enter new text', h3.innerText);
     if (newText.trim().length < 1) {
         alert('Please enter new text');
     } else {
