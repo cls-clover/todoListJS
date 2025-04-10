@@ -37,11 +37,11 @@ const createActionButtons = function (onDelete, onEdit) {
     divButtons.append(btn_delete);
 
     // -------- add listeners ---------
-    btn_delete.addEventListener('click', (e) => {
+    btn_delete.addEventListener('click', () => {
         onDelete()
     })
 
-    btn_edit.addEventListener('click', (e) => {
+    btn_edit.addEventListener('click', () => {
         onEdit()
     })
 
